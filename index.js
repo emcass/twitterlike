@@ -5,7 +5,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
-
 const app = express();
 
 app.set("view engine", "ejs");
@@ -44,6 +43,14 @@ let loggedIn = auth != null;
 app.get("/", function (req, res) {
   if (loggedIn) {
     res.render("home", {});
+  } else {
+    res.redirect("/signup");
+  }
+});
+
+app.get("/profile", function (req, res) {
+  if (loggedIn) {
+    res.render("profile", {});
   } else {
     res.redirect("/signup");
   }

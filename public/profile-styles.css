@@ -1,0 +1,116 @@
+#profile-banner {
+  /* width: 100%; */
+}
+
+#profile-imgs {
+  position: relative;
+}
+
+#profile-banner img {
+  width: 100%;
+  max-height: 250px;
+}
+
+#profile-pic img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: -100px;
+  margin-left: 50px;
+  border: 5px solid black;
+}
+
+#profile-edit-btn {
+  background-color: black;
+  padding: 0 25px;
+  height: 60px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+#profile-bottom {
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#profile-name h2 {
+  color: grey;
+  font-style: italic;
+  font-weight: 100;
+}
+
+#profile-bio {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+#profile-misc {
+  margin-top: 20px;
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-misc-item {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.profile-misc-item i {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.profile-misc-item p {
+  font-size: 22px;
+  color: grey;
+}
+
+.profile-misc-item a p {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+#profile-follow-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.profile-follow-info-item {
+  display: flex;
+}
+
+.profile-follow-info-item p {
+  font-size: 22px;
+  margin-right: 10px;
+  color: grey;
+}
+
+#following {
+  margin-right: 25px;
+}
+
+#following-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+#follower-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
